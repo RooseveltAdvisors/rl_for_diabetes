@@ -1,0 +1,47 @@
+**************************** Demographic data *****************************************************
+PARAMETER NAME (units)				VALUE
+
+weight (kg):			    		69	  	
+insulin_needs (U/day):                  	21  	  	
+*****************************Model parameters *****************************************************
+PARAMETER NAME (units)			    	VALUE        TIME_VARIANT        PHASE
+							     (0=NO/1 =YES)   (fraction of cycle)
+Vd_insulin (L/kg):      			0.1132021456  	0 	      		0
+Vd_glucose (L/kg):      			0.1786782648  	0 	      		0		
+renal_clearance_threshold (mmol/l):         	11.7012350756  	0 	      		0
+renal_clearance (1/min):		    	0.0118899556  	0 	      		0
+ka_insulin (1/min): 	    			0.0198412698   	1                     	0.7301159944
+ke_insulin (1/min):          			0.1320736797  	1			0.2491062361
+kb1 (1/min):      				0.0021104996  	1			0.1122069264
+Sit (1/min per mU/l):	    			0.0077090900  	1			0.2650845690
+kb2 (1/min):      				0.3956365708  	1			0.7659261226
+Sid (1/min per mU/l):	    			0.0003135730   	1			0.3736597430
+kb3 (1/min):      				0.0803188291  	1			0.4483621250
+Sie (per mU/l):	    				0.0377414000   	1			0.9279202045	
+EGP0 (mmol/kg/min):				0.0196209000	1			0.3647359004
+F01 (mmol/kg/min):				0.0129474118	1			0.9000763496
+k12 (1/min):			            	0.1094815916  	1 	      		0.2873662633
+F02_interstitial (mmol/kg/min):			0		0			0.1767326884
+Si_interstitial (1/min per mU/l):		0		0			0.1330301828
+k12_interstitial (1/min):			0.073642	0			0.9147618030
+k21_interstitial (1/min):			1		0			0.7033906064
+****************************** Meal parameters (for first N meals) ********************************
+bioavailability_glucose (unitless)               idx	tmax_glucose_abs (min)			alpha (unitless)
+0.710						  0	43					2.1
+0.710						  1	43					2.1
+0.710						  2	43					2.1
+0.710						  3	43					2.1
+******************************Inter-occasion variability of bioavailbility*************************
+variability_bio (%):			20 [-30, 30]	
+****************************** Enteral infusion parameters ****************************************
+bioavailability_glucose_infusion (unitless)     	tmax_glucose_abs (min)			alpha (unitless)
+0.710							43					2.1
+****************************** Exercise parameter ****************************************
+exercise_glucose_drop (mmol/l per min):			0.094
+******************************Inter-occasion variability of exercise*************************
+variability_ex (%):			15 [-20, 20]			
+****************************** Run_in_period *****************************************************
+basal_insulin_rate (U/h):		0.5
+insulin_to_CHO_ratio (U per 10g CHO):	0.7
+****************************** Si modifier **********************************************
+time	modifier
